@@ -1,9 +1,7 @@
-import { useLocation } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 function NavList(links) {
-    const { pathname } = useLocation();
     return (
         <ul className="wd-gen-nav list-group">
             <ListGroup id={`page-nav`}>
@@ -12,8 +10,7 @@ function NavList(links) {
                         <HashLink
                             id={`HashLink${link}`}
                             to={`#${link}`}
-                            className={`list-group-item rounded-0 bg-transparent text-secondary
-                            ${index !== links.length - 1 ? "border-bottom border-dark" : ""}`}>
+                            className={`list-group-item rounded-0 bg-transparent text-secondary`}>
                             {link}
                         </HashLink>
                     </ListGroup>

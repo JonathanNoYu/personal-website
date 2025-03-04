@@ -7,6 +7,7 @@
     /* border-bottom: 1px solid lightgray; */
     overflow-x: hidden;
     background: radial-gradient(farthest-side ellipse at 1% 0,rgb(108, 108, 122),#17193b);
+    /* background-color: rgb(108, 108, 122); */
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

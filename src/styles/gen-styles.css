@@ -1,3 +1,8 @@
+/* 
+   TODO -- Replace Left Link selector with Bars at the top starting at 1000px
+   TODO -- Replace the About Blogs and Contacts in Bars icon at top too starting at 400px.
+*/
+
 body {
     color: rgba(244, 244, 245, .9);
     overflow-x: hidden;
@@ -5,6 +10,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.wd-dark-filter { 
+    filter: grayscale(100%) invert(92%) contrast(83%);
 }
 
 .wd-nav-padding {

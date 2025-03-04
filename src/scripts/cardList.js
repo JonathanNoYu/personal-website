@@ -5,29 +5,31 @@ import activateElement from "./activateElement";
 import deactivateElement from "./deactivateElement";
 
 function cardList(project) {
+    const slideList = JSON.parse(JSON.stringify(project.slides));
+    const captionList = JSON.parse(JSON.stringify(project.captions));
     const ComponentToTrack = ({ isVisible }) => {
         if (isVisible) {
-            activateElement(`HashLink${project._id}`)
+            activateElement(`HashLink${project.name}`)
         } else {
-            deactivateElement(`HashLink${project._id}`)
+            deactivateElement(`HashLink${project.name}`)
         }
         return (
-            <Card key={project._id} className="my-10rem h-100">
-                <Card.Body className="wd-card text-center">
+            <Card key={project._id} className="mb-15rem mt-5rem">
+                <Card.Body className="wd-card text-center h-40">
                     <Carousel>
-                        <Carousel.Item interval={1000} className="my-20rem">
-                            <img
-                                className="d-block w-100 h-75"
-                                src={`${project}`}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                {project.name}
-                            </Carousel.Caption>
-                        </Carousel.Item>
+                        {slideList.map((slide, index) => {
+                            return <Carousel.Item interval={5000} className="">
+                                <img
+                                    className="d-block w-100 h-40 mb-5 pb-5"
+                                    src={`res/${slide}`}
+                                    alt={`${index} slide img`}
+                                />
+                                <Carousel.Caption className="">
+                                    <h5>{`${captionList[index]}`}</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        })}
                     </Carousel>
-
                 </Card.Body>
             </Card>);
     }

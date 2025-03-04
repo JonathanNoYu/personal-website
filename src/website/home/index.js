@@ -5,7 +5,7 @@ import { Row } from "react-bootstrap";
 
 function Home() {
   const projects = db.projects
-  var list = projects.map((project) => project._id);
+  var list = projects.map((project) => project.name);
   return (
     <>
       {NavList(list)}

@@ -1,13 +1,30 @@
 [
     { "_id": "CVSToGraph",
-      "name": "CVSToGraph", "number": "RS4550", "startDate": "2023-01-10",
-      "endDate": "2023-05-15"
-    },
-    { "_id": "SnapMap",
-      "name": "SnapMap", "number": "RS4560", "startDate": "2023-01-10", "endDate": "2023-05-15"
+      "name": "CVSToGraph",
+      "slides": ["OneGraphCSVToGraph.png",
+                 "TwoGraphCSVToGraph.png",
+                 "LightModeCSVToGraph.png"],
+      "captions": ["Loading a LoggerPro CSV into CVSToGraph",
+                   "Selecting a section of wavelength (x point)",
+                   "Turning on the light mode on my project!"]
     },
     { "_id": "RayTracer",
-      "name": "RayTracer", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
+      "name": "RayTracer", 
+      "slides": ["Initial Objects and Features.png",
+                 "Blurr RT Images.png",
+                 "Final Photos.png"],
+      "captions": ["Creating objects using ray interception & reflection, with blur and textures added by adjusting each ray's RGB components when it hits or flys in the air",
+                 "Blur was implemented by using focal depth on top of anti aliasing",
+                 "The Final photos was created with a few addiional quality of life features, Multi-threading & Bounding Volume Hierarchy decreased computation by a factor of 3!"]
+    },
+    { "_id": "SnapMap (Working on uploading data!)",
+      "name": "SnapMap (Working on uploading data!)",
+      "slides": [".png",
+                 ".png",
+                 ".png"],
+      "captions": ["",
+                 "",
+                 ""]          
     }
   ]
   
