@@ -4,7 +4,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* border-bottom: 1px solid lightgray; */
     overflow-x: hidden;
     background: radial-gradient(farthest-side ellipse at 1% 0,rgb(81, 81, 122),#17193b);
     /* background-color: rgb(108, 108, 122); */
