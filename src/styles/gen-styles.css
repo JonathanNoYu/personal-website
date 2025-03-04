@@ -4,17 +4,23 @@
 */
 
 body {
-    color: rgba(244, 244, 245, .9);
     overflow-x: hidden;
-    background: radial-gradient(farthest-side ellipse at 10% 0, #333867 25%, #17193b);
+    background-color: #06063b !important;
+    opacity: 0.9;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #06063b 60px ), repeating-linear-gradient( #141cb655, #141cb6 );
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
-.wd-dark-filter { 
-    filter: grayscale(100%) invert(92%) contrast(83%);
+.home {
+    height: 100vh;
 }
+
+/* .wd-dark-filter { 
+    filter: grayscale(100%) invert(92%) contrast(83%);
+} */
 
 .wd-nav-padding {
     padding-top: 4.57rem;
@@ -22,7 +28,7 @@ body {
 
 .wd-gen-nav {
     position: fixed;
-    width: 10%;
+    width: 5%;
     margin-top: 1.25%;
     margin-left: 1.25%;
     list-style-type: none;
@@ -55,4 +61,8 @@ ul.wd-gen-nav .wd-active {
     box-shadow: -1px -1px 92px 21px rgba(0, 0, 0, 0.15) inset;
     -webkit-box-shadow: -1px -1px 92px 21px rgba(0, 0, 0, 0.15) inset;
     -moz-box-shadow: -1px -1px 92px 21px rgba(0, 0, 0, 0.15) inset;
+}
+
+#page-nav{
+    border: 1px;
 }

@@ -17,8 +17,8 @@
                  "Blur was implemented by using focal depth on top of anti aliasing",
                  "The Final photos was created with a few addiional quality of life features, Multi-threading & Bounding Volume Hierarchy decreased computation by a factor of 3!"]
     },
-    { "_id": "SnapMap (Working on uploading data!)",
-      "name": "SnapMap (Working on uploading data!)",
+    { "_id": "SnapMap-(Working-on-uploading-data!)",
+      "name": "SnapMap",
       "slides": [".png",
                  ".png",
                  ".png"],
