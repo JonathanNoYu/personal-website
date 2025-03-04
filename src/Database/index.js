@@ -1,4 +1,5 @@
-import projects from "./projects.json";
-
-// eslint import/no-anonymous-default-export: [2, {"allowObject": true}]
-export default { projects };
+import project from "./projects.json";
+const projects = {
+    project
+}
+export default projects;
